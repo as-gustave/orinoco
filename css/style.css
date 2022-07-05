@@ -1,0 +1,84 @@
+.barnav{
+    border-bottom-width: 5px;
+    border-bottom-color: #808080;
+    border-bottom-style: inset;
+}
+
+.initial{
+    font-family: 'SignPainter','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: slategrey;
+}
+
+.body{
+    margin-bottom: 4%;
+}
+
+.nav-link:hover{
+    background-color: #d9e1e9;
+}
+
+.tableTh{
+    border-bottom-width: 3px;
+    border-bottom-color: black;
+    border-bottom-style: inset;
+
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.tableTd{
+    text-align: center;
+    font-size: small;
+}
+
+.spacing{
+    margin-bottom: 3%;
+}
+
+.main__product__headline{
+    font-family: 'SignPainter','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.main__product--detail{
+    font-family: 'SignPainter','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.border-deco1{
+    box-shadow: -4px 5px 20px rgb(166, 180, 192);
+}
+
+.formulaire__css{
+    background-color:black ;
+    color: aliceblue;
+    width: 70%;
+    font-family: 'SignPainter','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.carousel{
+    height: 85px;
+}
+
+.carousel-indicators li {
+    color: red;
+    margin: 0 60px;
+    width: 100px;
+    height: 5px;
+    border: none;
+    background-color: #999;
+    transition: all 1s ease;
+}
+
+.carousel-indicators .active, .hover {
+    background-color: #337ab7;
+}
+
+.footer-validation{
+    padding-top: 20%;
+}
