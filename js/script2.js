@@ -1,4 +1,4 @@
-const url = "http://localhost:3000/api/cameras"
+const url = "http://localhost:3000/api/cameras/"
 
 const urlVar = window.location.search;
 
