@@ -1,3 +1,5 @@
+// texte d'affichage pour la page de validation avec l'order ID et prix total
+
 if( localStorage.getItem('articlePanier')){
     const ancreMess = document.getElementById('messageRemerciement')
     const mess = document.createElement('div')
@@ -19,6 +21,8 @@ if( localStorage.getItem('articlePanier')){
     localStorage.removeItem('numero de commande')
     localStorage.removeItem('articlePanier')
 }
+
+// texte en cas de rafraichissemnt de la page et redirection a la page d'accueil
 
 else{
     const ancreMess = document.getElementById('messageRemerciement')

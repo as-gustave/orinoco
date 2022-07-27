@@ -1,3 +1,4 @@
+// recuperation des valeurs du formulaire
 document.getElementById('validation').addEventListener('click', function(){
     let prenom = document.getElementById('prenom').value
     let nom =  document.getElementById('nom').value
@@ -5,6 +6,7 @@ document.getElementById('validation').addEventListener('click', function(){
     let adresse = document.getElementById('adresse').value
     let ville = document.getElementById('ville').value
 
+    // requete POST pour recuperer le numero de commande
     fetch('http://localhost:3000/api/cameras/order',{
         method : "POST",
         headers : {

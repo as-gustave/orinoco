@@ -1,3 +1,4 @@
+// creation du tableau qui affiche les articles du panier
 const ancre = document.getElementById('remplissage')
 let child = document.createElement('tr')
 child.classList.add('tableTh')
@@ -5,8 +6,11 @@ child.classList.add('tableTh')
 child.innerHTML = '<th>Article</th><th>Taille</th><th>Prix Unitaire</th><th>Quantié</th><th>Prix total</th>'
 ancre.appendChild(child)
 
+// recuperation du panier 
 let panier = JSON.parse(localStorage.getItem('articlePanier'))
+// recuperation de identifiant des cameras 
 let listPropriete = Object.keys(panier)
+// initialisation du compteur prix total
 let prixTotal = 0
 
 if(localStorage.getItem('articlePanier')){
@@ -17,6 +21,7 @@ if(localStorage.getItem('articlePanier')){
                 return res.json();
             }
         })
+        // completion du tableau avec les articles
         .then(function(value){
             for ( let indiceLentille = 0 ; indiceLentille < panier[listPropriete[indexCamera]].length ; indiceLentille++ ){
                 let lineProduit = document.createElement('tr')
