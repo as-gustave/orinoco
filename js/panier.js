@@ -13,6 +13,7 @@ let listPropriete = Object.keys(panier)
 // initialisation du compteur prix total
 let prixTotal = 0
 
+// requete pour recuperer la camera
 if(localStorage.getItem('articlePanier')){
     for( let indexCamera = 0 ; indexCamera < listPropriete.length; indexCamera++){
         fetch('http://localhost:3000/api/cameras/'+listPropriete[indexCamera])
